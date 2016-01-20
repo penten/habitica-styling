@@ -1,0 +1,82 @@
+/* make tasks wider, less wasted space */
+.task-column {
+    padding: 0.5em;
+}
+
+/* make tasks closer together */
+.task {
+   /* margin-bottom: 5px; */
+   margin-bottom: 0px;
+}
+
+/* center the seperator tasks */
+.task h3 {
+	text-align: center;
+    margin-top: 0;
+   	text-decoration: underline;
+}
+
+/* hide the header unless hovered-over */
+.site-header {
+    opacity: 0;
+}
+.site-header:hover {
+    opacity: 0.3;
+}
+
+/* hide the rewards column unless hovered over */
+.task-column.rewards {
+    opacity: 0;
+}
+.task-column.rewards:hover {
+    opacity: 0.3;
+}
+
+/* hide the gold/silver count unless hovered over */
+.toolbar-wallet {
+    opacity: 0;
+}
+.toolbar-wallet:hover {
+    opacity: 0.3;
+}
+
+/* make the daily, habit and reward columns take up 1/4 of the space (rewards will be pushed down under the todo column) */
+.tasks-lists .row .col-md-3 {
+    padding-left: 3px;
+    padding-right: 3px;
+    width:25%;
+}
+
+/* make the Todo column take up 1/2 of the space */
+.tasks-lists .row .col-md-3:nth-child(3) {
+    width:50%;
+}
+
+/* could be used instead of the widths above to widen when hovering
+.tasks-lists .row .col-md-3:hover {
+    width:50%;
+}
+*/
+
+.task-filter {
+    margin-top: 0;
+	margin-bottom: 6px
+}
+
+.filters {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.task-column_title {
+	font-size:18px;   
+}
+
+/* hide the help button at the top of each task row */
+.task-column .option-action span.glyphicon.glyphicon-question-sign {
+    display: none;
+}
+
+.task-add {
+    margin-top: 10px;
+}
